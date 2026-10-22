@@ -98,3 +98,7 @@ GET {{baseUrl}}/api/books?title=zzzzzz
 
 ### R3 Tomt filter: 200 og alle bøger
 GET {{baseUrl}}/api/books?title=
+
+### Kontrol fra dag 1: /about giver 200 og JSON med name og version
+GET {{baseUrl}}/about
+
