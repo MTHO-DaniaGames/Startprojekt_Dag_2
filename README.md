@@ -1,5 +1,7 @@
 # Bogkatalog · dag 2
 
+Visual Studio skal have workloaden **ASP.NET and web development** installeret. Den giver blandt andet mulighed for at sende requests direkte fra .http-filer.
+
 Åbn Bogkatalog.slnx i Visual Studio. Sæt Bogkatalog.Api som Startup Project, og start med Ctrl+F5.
 API'et lytter normalt på http://localhost:5200. Kontrollér adressen i konsollen.
 
@@ -10,8 +12,8 @@ dotnet run --project src/Bogkatalog.Api --urls http://localhost:5200
 ```
 
 Åbn src/Bogkatalog.Api/Bogkatalog.Api.http i Visual Studio. Klik Send Request ved den request, du vil teste. API'et skal allerede køre.
-Start med A0. A1 og resten virker først, når du har implementeret de relevante endpoints.
-### adskiller requests. Den tomme linje mellem Content-Type og JSON skal bevares.
+Start med **A0 Kontrol**, som kalder /health og skal give 200 OK. A0, A1 osv. er navne på testene i filen. Bog-endpoints giver 404, indtil du har implementeret dem i øvelserne.
+`###` adskiller requests. Den tomme linje mellem Content-Type og JSON skal bevares.
 
 ## Det er gjort klar
 
@@ -29,6 +31,7 @@ Du behøver kun starte API'et til dagens API-øvelser.
 
 Grøn A: GET-listen og GET med Id. Grøn B: POST med validation og 201 Created.
 Gul: PUT og DELETE. Rød: filtrér den eksisterende GET-liste med ?title=.
-Brug Loesningsforslag til sammenligning, hvis du går i stå. Kør kun én udgave af API'et på port 5200 ad gangen.
+Hints og løsningsforslag findes sidst i PowerPoint-præsentationen til dag 2. Kør kun én udgave af API'et på port 5200 ad gangen.
 
-I Loesningsforslag er alle endpoints implementeret, inklusive det røde title-filter.
+Dette repo indeholder startprojektet. Øvelser og kodegennemgang findes i PowerPoint-præsentationen til dag 2.
+
